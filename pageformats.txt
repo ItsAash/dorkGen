@@ -1,0 +1,4 @@
+.php?
+.php4?
+.php3?
+.asp?

@@ -1,6 +1,12 @@
 const fs = require('fs');
-const keywordPath = process.argv[2];
 const readline = require('readline-sync');
+
+if (process.argv <= 3) {
+    const keywordPath = "/keywords/keyword.txt";
+} else {
+    const keywordPath = process.argv[2];
+}
+
 
 const keywordTxt = fs.readFileSync(keywordPath, {
     encoding: 'utf8'

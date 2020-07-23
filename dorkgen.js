@@ -1,10 +1,10 @@
 const fs = require('fs');
 const readline = require('readline-sync');
-
+const keywordPath;
 if (process.argv <= 3) {
-    const keywordPath = "/keywords/keyword.txt";
+    keywordPath = "/keywords/keyword.txt";
 } else {
-    const keywordPath = process.argv[2];
+    keywordPath = process.argv[2];
 }
 
 
